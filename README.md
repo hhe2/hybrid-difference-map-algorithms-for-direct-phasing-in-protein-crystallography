@@ -1,7 +1,7 @@
 # hybrid-difference-map-algorithms-for-direct-phasing-in-protein-crystallography
 Hybrid Difference Map Algorithms for Direct Phasing in Protein Crystallography
 
-# Crystallographic Phase Reconstruction GUI
+# Crystallographic Phase Reconstruction GUI (Development in Progress)
 
 A modern web-based interface for iterative crystallographic phase retrieval from X-ray diffraction amplitude data using hybrid input-output (HIO), difference map (DM) and hybrid difference map (HDM) algorithms.
 
@@ -602,4 +602,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 **Version**: 1.0.0  
 **Last Updated**: October 2025  
-**Maintainer**: Your Name <your.email@example.com>
+**Maintainer**: xxx <xxx.email@example.com>
