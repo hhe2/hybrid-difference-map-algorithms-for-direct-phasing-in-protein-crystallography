@@ -1,0 +1,113 @@
+# Crystallographic Phase Reconstruction Parameters
+# Lines starting with # are comments and will be ignored
+
+# =============================================
+# PDB Structure Information
+# =============================================
+PDB_CODE 2uxj
+PDB_HIST 2uxj
+
+# =============================================
+# Iteration and Resolution Parameters
+# =============================================
+numIter 1000
+
+resoCutoff 2.25      
+resoCutoff_hist 2.25
+
+resoCutoffLow 22
+resoCutoffLowHalfFill 15
+
+# =============================================
+# Density Modification Parameters
+# =============================================
+solvCont 0.68       # PDB 76.56%, 72.1 - 76% pymol 查看 mask 和 pdb cell
+solvCont_hist 0.68  # solvCont ~ solvCont - 0.04
+
+sigmaWeight_initial 4.0
+sigmaWeight_final 2.5
+
+hioBeta 0.75
+chioAlpha 0.4       # fixed
+hprBeta 0.588       # fixed
+dmBeta 0.75         # belike hioBeta
+raarBeta 1.0        # fixed 0.95 - 1.05
+mchioBeta  0.5      # modifiedCHIO, belike hioBeta
+
+hioDensLimitIni 10.0
+hioDensLimitFina 0.1
+
+proteinDensAvg 0.05
+
+# =============================================
+# Algorithm Control Flags (0 = false, 1 = true)
+# =============================================
+Obs_sigma 1
+
+hybrid_input_output 0
+
+HIO_k1 0        # 正常的轮廓
+HIO_k2 0        # 轮廓内小半径精修轮廓
+HIO_old 0       # 交换PA、PB，PBPA代替PAPB, 正常的轮廓
+
+transition_hybrid_input_output 0    # 不包含论文中严格的内外各5%，值包含轮廓向内5%
+
+THIO_t1 0       # 正常的轮廓内嵌套轮廓，过渡区在蛋白质低密度区域
+THIO_t2 0       # 轮廓内小半径精修轮廓得过渡区，过渡区在蛋白质低密度区域
+THIO_old 0      # 正常的轮廓内外嵌套两层，过渡区域shrinkPercent*2
+
+continuous_hybrid_input_output 0
+
+CHIO_t1 0       # 正常的轮廓内嵌套轮廓，过渡区在蛋白质低密度区域
+CHIO_t2 0       # 轮廓内小半径精修轮廓得过渡区，过渡区在蛋白质低密度区域
+
+hybrid_projection_reflection 0
+
+HPR_t1 0        # 正常的轮廓内嵌套轮廓，过渡区在蛋白质低密度区域
+HPR_t2 0        # 轮廓内小半径精修轮廓得过渡区，过渡区在蛋白质低密度区域
+
+modified_continuous_hybrid_input_output 0   # 过渡区域反馈比CHIO、HPR更平缓, 斜率0.5, 远小于CHIO的1.5
+
+MCHIO_t1 0      # 正常的轮廓内嵌套轮廓，过渡区在蛋白质低密度区域
+MCHIO_t2 0      # 轮廓内小半径精修轮廓得过渡区，过渡区在蛋白质低密度区域
+
+difference_map 0    # 蛋白区域，xn
+
+DM_k1 0         # 正常的轮廓
+DM_k2 0         # 轮廓内小半径精修轮廓
+
+modified_difference_map 0   # 蛋白区域，PA*PB*xn
+
+MDM_k1 0        # 正常的轮廓
+MDM_k2 0        # 轮廓内小半径精修轮廓
+
+averaged_successive_reflections 0
+
+ASR_k1 0        # 正常的轮廓
+ASR_k2 0        # 轮廓内小半径精修轮廓
+
+relaxed_averaged_alternating_reflections 0
+
+RAAR_k1 0        # 正常的轮廓
+RAAR_k2 0        # 轮廓内小半径精修轮廓
+
+modified_relaxed_averaged_alternating_reflections 0
+
+MRAAR_k1 0       # 正常的轮廓
+MRAAR_k2 0       # 轮廓内小半径精修轮廓
+
+hybrid_difference_map 1
+HDM_f1 1         # HDM formula1
+HDM_f2 0         # HDM formula2
+HDM_f3 0         # HDM formula3
+HDM_f4 0         # HDM formula4
+HDM_f5 0         # HDM formula5
+HDM_f6 0         # HDM formula6
+
+
+genetic_algorithm 1
+
+start_from_pdb 1
+start_from_randmap 0
+start_from_mr 0
+start_from_mtz 0
