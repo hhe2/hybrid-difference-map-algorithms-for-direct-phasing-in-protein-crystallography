@@ -2,7 +2,6 @@
 
 A modern web-based interface for iterative crystallographic phase retrieval from X-ray diffraction amplitude data using hybrid input-output (HIO), difference map (DM) and hybrid difference map (HDM) algorithms.
 
-
 ## Features
 
 ✨ **Modern Web Interface**
